@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Studio - Reformer, Mat Pilates y Barre</title>
+    <link rel="icon" href="img/logo.jpg" type="image/jpeg">
+
+    <!-- bxSlider: links del plugin -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+</head>
+<body>
+
+    <!-- barra con logo y menú -->
+    <header class="barra-studio">
+        <a href="index.html" class="logo-studio">
+            <img src="img/logo.jpg" alt="Logo de Wellness Studio">
+            Wellness Studio
+        </a>
+        <nav id="menu-principal">
+            <ul class="menu-studio">
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="clases.html">Clases</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <button id="btn-noche">Modo noche</button>
+        <button id="btn-menu-movil">&#9776;</button>
+    </header>
+
+    <div class="portada portada-inicio">
+        <div class="velo">
+            <img src="img/logo.jpg" alt="Logo de Wellness Studio">
+            <h1>Wellness Studio</h1>
+            <p>Clases de Reformer Pilates, Mat Pilates y Barre en un espacio pensado para ti.</p>
+            <a href="clases.html" class="btn-studio btn-claro">Ver clases</a>
+            <a href="contacto.html" class="btn-studio">Agenda tu primera clase</a>
+        </div>
+    </div>
+
+    <main>
+        <section>
+            <h2>Bienvenida</h2>
+            <p>En Wellness Studio trabajamos fuerza, postura y flexibilidad en grupos pequeños, con instructoras certificadas que te acompañan desde tu primera clase.</p>
+            <div class="fila-studio">
+                <div class="cuadro-studio">
+                    <h3>Reformer Pilates</h3>
+                    <p>Trabajo con resistencia en máquina para fortalecer todo el cuerpo.</p>
+                </div>
+                <div class="cuadro-studio">
+                    <h3>Mat Pilates</h3>
+                    <p>Ejercicios en tapete enfocados en el centro del cuerpo y la respiración.</p>
+                </div>
+                <div class="cuadro-studio">
+                    <h3>Barre</h3>
+                    <p>Mezcla de ballet, pilates y fuerza usando la barra.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- bxSlider: estructura del HTML -->
+        <section>
+            <h2>Nuestras clases</h2>
+            <div class="slider">
+                <div><img src="img/reformer.jpg" alt="Clase de Reformer Pilates" title="Reformer Pilates - máximo 8 personas por clase"></div>
+                <div><img src="img/matpilates.jpg" alt="Clase de Mat Pilates" title="Mat Pilates - ideal para empezar"></div>
+                <div><img src="img/barre.jpg" alt="Clase de Barre" title="Barre - fuerza y resistencia con música"></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Horario</h2>
+            <table class="tabla-studio">
+                <tr><th>Días</th><th>Horario</th></tr>
+                <tr><td>Lunes a viernes</td><td>6:00 - 21:00</td></tr>
+                <tr><td>Sábado</td><td>8:00 - 14:00</td></tr>
+                <tr><td>Domingo</td><td>Cerrado</td></tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Wellness Studio</strong> - Reformer, Mat Pilates y Barre</p>
+        <p>Tel. 442 318 2045 | <a href="mailto:hola@wellnessstudio.mx">hola@wellnessstudio.mx</a></p>
+        <p id="fecha-hora"></p>
+        <p>&copy; 2026 Wellness Studio. Todos los derechos reservados.</p>
+    </footer>
+
+    <button id="btn-subir">&#8593;</button>
+
+</body>
+</html>
