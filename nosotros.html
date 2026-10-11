@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Wellness Studio</title>
+    <link rel="icon" href="img/logo.jpg" type="image/jpeg">
+    
+    
+</head>
+<body>
+
+    <header class="barra-studio">
+        <a href="index.html" class="logo-studio">
+            <img src="img/logo.jpg" alt="Logo de Wellness Studio">
+            Wellness Studio
+        </a>
+        <nav id="menu-principal">
+            <ul class="menu-studio">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html" class="activo">Nosotros</a></li>
+                <li><a href="clases.html">Clases</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <button id="btn-noche">Modo noche</button>
+        <button id="btn-menu-movil">&#9776;</button>
+    </header>
+
+    <div class="portada" style="background-image: url('img/recepcion_studio.jpg');">
+        <div class="velo">
+            <h1>Nosotros</h1>
+            <p>Conoce el estudio y a quienes estamos detrás</p>
+        </div>
+    </div>
+
+    <main>
+        <section>
+            <h2>¿Quiénes somos?</h2>
+            <div class="historia">
+                <div>
+                    <p>Wellness Studio es un estudio boutique de pilates y barre en Querétaro. Nuestras clases son de grupos pequeños para que cada alumna reciba atención y correcciones personalizadas.</p>
+                    <p>Todas nuestras instructoras están certificadas en el método Pilates y adaptan cada ejercicio a tu nivel.</p>
+                    <!-- párrafo oculto que aparece con slideDown -->
+                    <p id="parrafo-historia" class="oculto">Abrimos en 2022 con dos máquinas de reformer y un salón de tapetes. Hoy contamos con un salón para cada disciplina, vestidores y lockers para que vengas antes o después del trabajo.</p>
+                    <button id="btn-historia" class="btn-studio">Conoce nuestra historia</button>
+                </div>
+                <img src="img/recepcion_studio.jpg" alt="Recepción de Wellness Studio">
+            </div>
+        </section>
+
+        <section>
+            <h2>Misión y Visión</h2>
+            <div class="fila-studio">
+                <div class="cuadro-studio">
+                    <h3>Misión</h3>
+                    <p>Ayudar a nuestras alumnas a moverse mejor y sentirse fuertes con clases seguras y bien guiadas.</p>
+                </div>
+                <div class="cuadro-studio">
+                    <h3>Visión</h3>
+                    <p>Ser el estudio de pilates de referencia en Querétaro por la calidad de nuestras clases y nuestra comunidad.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Nuestras instalaciones</h2>
+            <div class="instalaciones">
+                <figure class="espacio">
+                    <img src="img/recepcion_studio.jpg" alt="Recepción">
+                    <figcaption>Recepción</figcaption>
+                </figure>
+                <figure class="espacio">
+                    <img src="img/materiales_studio.jpg" alt="Materiales para las clases">
+                    <figcaption>Materiales</figcaption>
+                </figure>
+                <!-- estas dos se muestran con fadeIn -->
+                <figure class="espacio extra oculto">
+                    <img src="img/lockers_studio.jpg" alt="Lockers">
+                    <figcaption>Lockers</figcaption>
+                </figure>
+                <figure class="espacio extra oculto">
+                    <img src="img/vestidores.jpg" alt="Vestidores">
+                    <figcaption>Vestidores</figcaption>
+                </figure>
+            </div>
+            <button id="btn-instalaciones" class="btn-studio">Ver más espacios</button>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Wellness Studio</strong> - Reformer, Mat Pilates y Barre</p>
+        <p>Tel. 442 318 2045 | <a href="mailto:hola@wellnessstudio.mx">hola@wellnessstudio.mx</a></p>
+        <p id="fecha-hora"></p>
+        <p>&copy; 2026 Wellness Studio. Todos los derechos reservados.</p>
+    </footer>
+
+    <button id="btn-subir">&#8593;</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</body>
+</html>

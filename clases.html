@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases - Wellness Studio</title>
+    <link rel="icon" href="img/logo.jpg" type="image/jpeg">
+
+    
+</head>
+<body>
+
+    <header class="barra-studio">
+        <a href="index.html" class="logo-studio">
+            <img src="img/logo.jpg" alt="Logo de Wellness Studio">
+            Wellness Studio
+        </a>
+        <nav id="menu-principal">
+            <ul class="menu-studio">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="clases.html" class="activo">Clases</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <button id="btn-noche">Modo noche</button>
+        <button id="btn-menu-movil">&#9776;</button>
+    </header>
+
+    <div class="portada" style="background-image: url('img/barre_part.jpg');">
+        <div class="velo">
+            <h1>Clases</h1>
+            <p>Elige la disciplina que más va contigo</p>
+        </div>
+    </div>
+
+    <main>
+        <section>
+            <h2>Nuestras disciplinas</h2>
+            <p>Da clic en una clase para ver sus detalles.</p>
+            <div class="contenedor-clases">
+                <div class="tarjeta-clase" data-clase="Reformer Pilates" data-duracion="50 min" data-cupo="8 personas" data-precio="$280">
+                    <img src="img/reformer_part.jpg" alt="Salón de Reformer Pilates">
+                    <h3>Reformer Pilates</h3>
+                    <p>Clase en máquina reformer con resortes que dan resistencia. Fortalece abdomen, piernas y espalda.</p>
+                    <p class="precio">$280 por clase</p>
+                </div>
+                <div class="tarjeta-clase" data-clase="Mat Pilates" data-duracion="50 min" data-cupo="12 personas" data-precio="$180">
+                    <img src="img/matpilates_part.jpg" alt="Salón de Mat Pilates">
+                    <h3>Mat Pilates</h3>
+                    <p>Ejercicios en tapete con aros, ligas y pelotas. Perfecta para empezar o complementar tu rutina.</p>
+                    <p class="precio">$180 por clase</p>
+                </div>
+                <div class="tarjeta-clase" data-clase="Barre" data-duracion="45 min" data-cupo="10 personas" data-precio="$200">
+                    <img src="img/barre_part.jpg" alt="Salón de Barre">
+                    <h3>Barre</h3>
+                    <p>Movimientos pequeños y repetidos en la barra, inspirados en el ballet, para tonificar todo el cuerpo.</p>
+                    <p class="precio">$200 por clase</p>
+                </div>
+            </div>
+
+            <!-- aquí se escribe con jQuery la clase elegida -->
+            <div id="clase-elegida" class="oculto"></div>
+        </section>
+
+        <section>
+            <h2>Paquetes</h2>
+            <table class="tabla-studio">
+                <tr><th>Paquete</th><th>Vigencia</th><th>Precio</th></tr>
+                <tr><td>Clase muestra</td><td>1 semana</td><td>$120</td></tr>
+                <tr><td>8 clases</td><td>1 mes</td><td>$1,600</td></tr>
+                <tr><td>12 clases</td><td>1 mes</td><td>$2,200</td></tr>
+                <tr><td>Ilimitado</td><td>1 mes</td><td>$2,900</td></tr>
+            </table>
+            <p>Los paquetes se pueden usar en cualquiera de las tres disciplinas.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Wellness Studio</strong> - Reformer, Mat Pilates y Barre</p>
+        <p>Tel. 442 318 2045 | <a href="mailto:hola@wellnessstudio.mx">hola@wellnessstudio.mx</a></p>
+        <p id="fecha-hora"></p>
+        <p>&copy; 2026 Wellness Studio. Todos los derechos reservados.</p>
+    </footer>
+
+    <button id="btn-subir">&#8593;</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</body>
+</html>
