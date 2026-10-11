@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Wellness Studio</title>
+    <link rel="icon" href="img/logo.jpg" type="image/jpeg">
+    
+
+</head>
+<body>
+
+    <header class="barra-studio">
+        <a href="index.html" class="logo-studio">
+            <img src="img/logo.jpg" alt="Logo de Wellness Studio">
+            Wellness Studio
+        </a>
+        <nav id="menu-principal">
+            <ul class="menu-studio">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="clases.html">Clases</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
+        <button id="btn-noche">Modo noche</button>
+        <button id="btn-menu-movil">&#9776;</button>
+    </header>
+
+    <div class="portada" style="background-image: url('img/matpilates_part.jpg');">
+        <div class="velo">
+            <h1>Contacto</h1>
+            <p>Escríbenos y agenda tu clase muestra</p>
+        </div>
+    </div>
+
+    <main>
+        <section id="contacto">
+            <h2>Envíanos un mensaje</h2>
+
+            <div id="mensaje-exito" class="exito oculto">
+                ¡Gracias! Recibimos tu mensaje y te contestaremos pronto.
+            </div>
+
+            <div class="contacto-fila">
+                <form id="form-contacto" novalidate>
+                    <div class="campo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" placeholder="Tu nombre">
+                        <span class="error-mensaje" id="error-nombre"></span>
+                    </div>
+
+                    <div class="campo">
+                        <label for="correo">Correo:</label>
+                        <input type="email" id="correo" placeholder="ejemplo@correo.com">
+                        <span class="error-mensaje" id="error-correo"></span>
+                    </div>
+
+                    <div class="campo">
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" id="asunto" placeholder="Ej. Quiero una clase muestra">
+                        <span class="error-mensaje" id="error-asunto"></span>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" rows="5" placeholder="Escribe tu mensaje..."></textarea>
+                        <span class="error-mensaje" id="error-mensaje"></span>
+                    </div>
+
+                    <button type="submit" class="btn-studio">Enviar mensaje</button>
+                </form>
+
+                <div class="datos-studio">
+                    <img src="img/studio_fuera.jpg" alt="Fachada de Wellness Studio">
+                    <p><strong>Dirección:</strong> Xentric Anáhuac Plaza, Av. Paseo de las Pitahayas 55, La Cañada, Querétaro</p>
+                    <p><strong>Teléfono:</strong> 442 318 2045</p>
+                    <p><strong>Correo:</strong> hola@wellnessstudio.mx</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- mapa de Google:  Incorporar un mapa-->
+        <section class="mapa">
+            <h2>¿Dónde estamos?</h2>
+            <iframe src="https://maps.google.com/maps?q=20.678757,-100.313538&amp;z=15&amp;output=embed" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Wellness Studio</strong> - Reformer, Mat Pilates y Barre</p>
+        <p>Tel. 442 318 2045 | <a href="mailto:hola@wellnessstudio.mx">hola@wellnessstudio.mx</a></p>
+        <p id="fecha-hora"></p>
+        <p>&copy; 2026 Wellness Studio. Todos los derechos reservados.</p>
+    </footer>
+
+    <button id="btn-subir">&#8593;</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  
+
+</body>
+</html>
