@@ -33,15 +33,15 @@ function validarContacto() {
     }
 
     // correo: obligatorio y con formato correcto
-    var correo = document.getElementById('correo').value.trim();
-    var formatoCorreo = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/;
+    var correo = document.getElementById('email').value.trim();
     if (correo === '') {
-        marcarError('correo', 'El correo es obligatorio.');
+        marcarError('email', 'Por favor escribe tu correo.');
         esValido = false;
-    } else if (!formatoCorreo.test(correo)) {
-        marcarError('correo', 'Escribe un correo válido (ej. nombre@correo.com).');
+    } else if (!correo.includes('@') || (!correo.endsWith('.com') && !correo.endsWith('.mx') && !correo.endsWith('.org') && !correo.endsWith('.edu'))) {
+        marcarError('email', 'Escribe un correo válido (ej. .com, .mx).');
         esValido = false;
     }
+
 
     // asunto
     var asunto = document.getElementById('asunto').value.trim();
