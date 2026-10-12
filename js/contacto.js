@@ -33,12 +33,12 @@ function validarContacto() {
     }
 
     // correo: obligatorio y con formato correcto
-    var correo = document.getElementById('email').value.trim();
+    var correo = document.getElementById('correo').value.trim();
     if (correo === '') {
-        marcarError('email', 'Por favor escribe tu correo.');
+        marcarError('correo', 'Por favor escribe tu correo.');
         esValido = false;
     } else if (!correo.includes('@') || (!correo.endsWith('.com') && !correo.endsWith('.mx') && !correo.endsWith('.org') && !correo.endsWith('.edu'))) {
-        marcarError('email', 'Escribe un correo válido (ej. .com, .mx).');
+        marcarError('correo', 'Escribe un correo válido (ej. .com, .mx).');
         esValido = false;
     }
 
